@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+<section id="title">Monty Hall Paradox Demo</section>
+<section id="explication">This is an demo of the Monty Hall Paradoxe, one of these three doors contain a prize, you can choose one, <br> after this another will be opened, and you will choice between change yoyr choice or rest on the same door.</section>
+<section id="youWon">You won</section>
+<section id="doorSection">
+    <div onclick="doorClicked(0)" class="door" id="door1"></div>
+    <div onclick="doorClicked(1)" class="door" id="door2"></div>
+    <div onclick="doorClicked(2)" class="door" id="door3"></div>
+</section>
+<button id="dontChange" onclick="dontChangeClicked()">Dont Change</button>
+<button id="change" onclick="changeClicked()">change</button>
+<section id="playerIndication">Click any door to open it</section>
+<script src="game.js"></script>
+</body>
+</html>
